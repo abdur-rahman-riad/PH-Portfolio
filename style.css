@@ -15,7 +15,7 @@ h1{
 .skill-title:hover{
     color: orange;
 }
-.top-paragraph{
+.paragraph{
     text-align: justify;
     margin-bottom: 25px;
 }
@@ -30,7 +30,10 @@ h1{
     float: left;
     margin-left: 5%;
     padding-left: 3%;
-
+}
+#second-content{
+    margin-left: 0;
+    margin-top: 50px;
 }
 .half-width img{
     display: block;
@@ -41,6 +44,7 @@ h1{
 }
 section{
     height: 550px;
+    padding-bottom: 35px;
 }
 .top-banner{
     background-image: url("img/top-banner.png");
@@ -57,4 +61,59 @@ section{
 }
 .link-button:hover{
     background-image: linear-gradient(45deg,lightSalmon, tomato);
+}
+h2{
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+.dream-area{
+    background-image: url("img/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 90px;
+}
+.single-eperience{
+    margin-top: 25px;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 5px;
+    height: 60%;
+    padding: 10px 23px;
+    background-color: white;
+}
+.experience-area{
+    background-image: url("img/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70px;
+}
+.experience{
+    background-image: linear-gradient(45deg,lightSalmon, tomato);
+    color: white;
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.experience:hover{
+    background-image: linear-gradient(45deg,#0000ff, #010188);
+}
+#full-stack{
+    border-left: 12px solid #03039c;
+    border-right: 12px solid orange;
+}
+#full-stack:hover{
+    border-left: 12px solid orange;
+    border-right: 12px solid #03039c;
+}
+#beg-dev{
+    border-left: 12px solid orange;
+    border-right: 12px solid #03039c;
+}
+#beg-dev:hover{
+    border-left: 12px solid #03039c;
+    border-right: 12px solid orange;
+}
+footer{
+    text-align: center;
+    color: gray;
 }
