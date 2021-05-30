@@ -34,6 +34,10 @@ h1{
 #second-content{
     margin-left: 0;
     margin-top: 50px;
+    animation: zoomin 1s linear;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .half-width img{
     display: block;
@@ -62,6 +66,44 @@ section{
 .link-button:hover{
     background-image: linear-gradient(45deg,lightSalmon, tomato);
 }
+#first-section-content{
+    animation: moveright 1s linear;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+#second-section-img{
+    animation: moveright 1s linear;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+#first-section-img{
+    animation: zoomin 1s linear;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
 h2{
     font-size: 40px;
     margin-bottom: -10px;
@@ -80,12 +122,12 @@ h2{
     padding: 10px 23px;
     background-color: white;
 }
-.experience-area{
+/* .experience-area{
     background-image: url("img/exp-bg.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 70px;
-}
+} */
 .experience{
     background-image: linear-gradient(45deg,lightSalmon, tomato);
     color: white;
@@ -93,6 +135,11 @@ h2{
     border-radius: 8px;
     margin-bottom: 10px;
     font-style: italic;
+
+    animation: zoomin 1s linear;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .experience:hover{
     background-image: linear-gradient(45deg,#0000ff, #010188);
@@ -100,6 +147,10 @@ h2{
 #full-stack{
     border-left: 12px solid #03039c;
     border-right: 12px solid orange;
+    animation: moveright 1s linear;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 #full-stack:hover{
     border-left: 12px solid orange;
@@ -108,6 +159,20 @@ h2{
 #beg-dev{
     border-left: 12px solid orange;
     border-right: 12px solid #03039c;
+    animation: moveleft 1s linear;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(-40px);
+        visibility: visible;
+    }
 }
 #beg-dev:hover{
     border-left: 12px solid #03039c;
